@@ -3,20 +3,32 @@ file:	.asciiz	"mine_record.dat"
 continue:
 	.asciiz	"Continue? (y/n):"
 welcome:
-	.asciiz "Minesweeper - Please Select (Begginer, Intermidiate, Advanced, or Custom):\n"
+	 .asciiz "\f\f\f========================================\n\
+          MINESWEEPER - MAIN MENU          \n\
+========================================\n\
+  Please select difficulty level:        \n\
+                                        \n\
+   Beginner    - 9x9  grid, 10 mines \n\
+   Intermediate- 16x16 grid, 40 mines\n\
+   Advanced    - 30x16 grid, 99 mines\n\
+   Custom      - Set your own size   \n\
+                                        \n\
+                                        \n\
+                                        \n\
+========================================\n"
 c_row:	.asciiz "Enter number or rows:" 
 c_col: 	.asciiz "Enter number or columns:"
 n_bomb:	.asciiz	"Enter number of bomb(): "
 new:	.asciiz	"\n"
 title:	.asciiz "\fMinesweeper 	Bombs:         Time:"							
-score:	.ascii	"\n\tษอออออออออออออออออออออออออออออป\n"
-	.ascii	"\tบ        Leader Board         บ\n"
-	.ascii	"\tบ Difficulty:                 บ\n"
-	.ascii  "\tบ Best Time:                  บ\n"
-	.ascii	"\tบ Your Time:                  บ\n"
-	.ascii	"\tบ Wins:                       บ\n"
-	.ascii	"\tบ Losses:                     บ\n"
-	.ascii	"\tศอออออออออออออออออออออออออออออผ\n"
+score:	.ascii	"\n\tรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรยป\n"
+	.ascii	"\tยบ        Leader Board         ยบ\n"
+	.ascii	"\tยบ Difficulty:                 ยบ\n"
+	.ascii  "\tยบ Best Time:                  ยบ\n"
+	.ascii	"\tยบ Your Time:                  ยบ\n"
+	.ascii	"\tยบ Wins:                       ยบ\n"
+	.ascii	"\tยบ Losses:                     ยบ\n"
+	.ascii	"\tรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรยผ\n"
 	.asciiz	"Press enter to continue"
 custom: .asciiz "\nCustom"
 cus: 	.asciiz "Custom"
